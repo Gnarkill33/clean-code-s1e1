@@ -5,53 +5,53 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
   <header class="header">
-    <h1 class="visually-hidden">Todo App</h1>
-    <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-    <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <h1 class="header__title visually-hidden">Todo App</h1>
+    <img class="header__pic" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+    <a class="header__ref" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main">
-    <section id="todos-to-add">
-      <h2 for="new-task">Add Item</h2>
-      <div class="new-task-wrapper">
-        <input id="new-task"class="task" type="text">
-        <button>Add</button>
+    <section class="todos">
+      <h2 class="todos__name todos__name_new">Add Item</h2>
+      <div class="todos__wrapper">
+        <input class="todos__input todos__input_add" type="text">
+        <button class="todos__button todos__button_add">Add</button>
       </div>
     </section>
-    <section>
-      <h2>Todo</h2>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Delete button">
+    <section class="todos">
+      <h2 class="todos__name">Todo</h2>
+      <ul class="todos__list todos__list_pending">
+        <li class="todo">
+          <input class="todos__input todos__input_check" type="checkbox">
+          <label class="todos__label">Pay Bills</label>
+          <input class="todos__input todos__input_edit" type="text">
+          <button class="todos__button todos__button_edit">Edit</button>
+          <button class="todos__button todos__button_delete">
+            <img class="todos__button-pic" src="./remove.svg" alt="Delete button">
           </button>
         </li>
-        <li class="edit-mode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Delete button">
+        <li class="todo todo_edit">
+          <input class="todos__input todos__input_check" type="checkbox">
+          <label class="todos__label">Go Shopping</label>
+          <input class="todos__input todos__input_edit" type="text" value="Go Shopping">
+          <button class="todos__button todos__button_edit">Save</button>
+          <button class="todos__button todos__button_delete">
+            <img class="todos__button-pic" src="./remove.svg" alt="Delete button">
           </button>
         </li>
       </ul>
     </section>
-    <section>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Delete button">
+    <section class="todos">
+      <h3 class="todos__name">Completed</h3>
+      <ul class="todos__list todos__list_done">
+        <li class="todo">
+          <input class="todos__input todos__input_check" type="checkbox" checked>
+          <label class="todos__label">See the Doctor</label>
+          <input class="todos__input todos__input_edit" type="text">
+          <button class="todos__button todos__button_edit">Edit</button>
+          <button class="todos__button todos__button_delete">
+            <img class="todos__button-pic" src="./remove.svg" alt="Delete button">
           </button>
         </li>
       </ul>
